@@ -8,3 +8,5 @@ target_include_directories(boost_static_assert BEFORE INTERFACE ${CMAKE_CURRENT_
 
 install(TARGETS boost_static_assert DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::static_assert ALIAS boost_static_assert)
